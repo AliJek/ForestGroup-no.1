@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forest Company</title>
+		<script
+			src="https://kit.fontawesome.com/ea705f461f.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/src/js/main.js" defer></script>
+	</head>
+	<body>
+		<header>
+	<nav class="nav">
+		<div class="navbar wrapper">
+			<a class="navbar__logo" href="index.html#home"><i class="fa-solid fa-tree"></i>Forest</a>
+
+			<div class="navbar__list" data-visible="false">
+				<a class="navbar__list-link active" href="index.html#home">Home</a>
+				<a class="navbar__list-link" href="index.html#aboutus">O nas</a>
+				<a class="navbar__list-link" href="index.html#offer">Oferta</a>
+				<a class="navbar__list-link" href="contact.html">Kontakt</a>
+			</div>
+
+			<button class="navbar__btn" data-visible="false"></button>
+		</div>
+	</nav>
+
+	<section class="hero" id="home">
+		<div class="wrapper">
+			<div class="hero__shadow"></div>
+			<p class="hero__text">Forest Group</p>
+			<h1 class="hero__header">Najpiękniejszy park w Twojej okolicy!</h1>
+		</div>
+	</section>
+</header>
+
+
+        <div class="wrapper">
+            <form class="contact">
+                <h2>Napisz do nas!</h2>
+                <div class="contact__box">
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name">
+                    <div class="contact__box-error">error</div>
+                </div>
+                <div class="contact__box">
+                    <label for="secondname">Nazwisko:</label>
+                    <input type="text" id="secondname">
+                    <div class="contact__box-error">error</div>
+                </div>
+                <div class="contact__box">
+                    <label for="select">Wybierz temat:</label>
+                    <select id="">
+                        <option value="0" selected disabled>-- Wybierz temat --</option>
+                        <option value="1">Pieszo</option>
+                        <option value="1">Rowerowo</option>
+                        <option value="1">Kolejka górska</option>
+                    </select>
+                    <div class="contact__box-error">error</div>
+                </div>
+                <label for="textarea">Napisz komentarz!</label>
+                <textarea cols="30" rows="10" id="textarea"></textarea>
+
+                <div class="contact__btn">
+                    <button class="contact__btn-send">Wyślij</button>
+                    <button class="contact__btn-cancel">Cofnij</button>
+                </div>
+            </form>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22094.055088523695!2d18.59662973936922!3d54.403769308606925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd75907cf29c17%3A0x22ec58915629e7ab!2sOlivia%20Star!5e0!3m2!1spl!2spl!4v1677013390126!5m2!1spl!2spl" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <footer class="footer">
+       <div class="wrapper">
+           <div class="footer__boxes">
+
+            <div class="footer__box">
+                <a class="footer__box-logo" href="#home"><i class="fa-solid fa-tree"></i>Forest</a>
+            </div>
+
+            <div class="footer__box">
+                    <h3 class="footer__box-title">O nas</h3>
+                    <ul>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Parki</a></li>
+                        <li><a href="#">Opinie</a></li>
+                    </ul>
+            </div>
+
+            <div class="footer__box">
+                    <h3 class="footer__box-title">Nasza firma</h3>
+                    <ul>
+                        <li><a href="#">Praca</a></li>
+                        <li><a href="#">Kadry</a></li>
+                        <li><a href="#">Zarząd</a></li>
+                    </ul>
+               </div>
+
+               <div class="footer__box">
+                       <h3 class="footer__box-title">Dokumenty</h3>
+                       <ul>
+                           <li><a href="#">Wnioski</a></li>
+                           <li><a href="#">Rezerwacje</a></li>
+                       </ul>
+               </div>
+            </div>
+
+           
+           </div>
+
+           <div class="footer__bottom">
+            <div class="footer__bottom-text"><span class="footer__bottom-year"></span> Forest Group Company Ltd.</div>
+           </div>
+       </div>
+</footer>
+	</body>
+</html>

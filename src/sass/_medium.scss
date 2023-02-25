@@ -1,0 +1,83 @@
+@media (min-width: 768px) {
+	body {
+		.navbar {
+			&__list {
+				position: static;
+				justify-content: center;
+				flex-direction: row;
+				height: 100%;
+				width: 50%;
+				top: 0;
+				transform: translateY(0);
+
+				&-link {
+					width: 100%;
+				}
+			}
+			&__btn {
+				display: none;
+			}
+		}
+
+		.hero {
+			height: 25em;
+			// background-image: url('/src/img/jungle-1807476_1920.jpg');
+		}
+
+		.about-us {
+			&__box {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				flex-direction: row-reverse;
+				margin-top: 2em;
+				gap: 2em;
+
+				&-info {
+					width: 50%;
+
+					p {
+						line-height: 2em;
+					}
+				}
+
+				&-img {
+					height: 20em;
+					width: 50%;
+				}
+			}
+		}
+
+		.adventure {
+			&__text {
+				padding: 1em 4em;
+				letter-spacing: 0.1em;
+				font-size: 3rem;
+			}
+		}
+
+		.footer {
+			&__boxes {
+                align-items: flex-start;
+				flex-direction: row;
+			}
+			&__box {
+				padding: 1em;
+				width: 20%;
+
+                &-logo {
+                    margin-top: .5em;
+                    font-size: 4rem;
+                }
+
+				li {
+					text-align: justify;
+				}
+
+				&:first-child {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
