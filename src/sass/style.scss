@@ -507,13 +507,14 @@ body {
 
 	&__box {
 		padding: 1.5em 5em;
-		background-color: rgb(238, 226, 226);
+		background-color: rgb(44, 40, 40);
 		border: 1px solid black;
+		border-radius: 45px;
 
 		&-text {
 			text-align: center;
 			font-size: 3rem;
-			color: rgb(20, 170, 20);
+			color: rgb(44, 190, 44);
 		}
 	}
 }

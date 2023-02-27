@@ -60,7 +60,7 @@
 
 		.contact-wrapper {
 			position: relative;
-			padding: 1em 2em;
+			padding: 1em 0em;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -75,6 +75,10 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+
+				&__box {
+					padding: 2em 25em;
+				}
 			}
 		}
 
