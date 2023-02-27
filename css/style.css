@@ -16,6 +16,7 @@
   }
   body .hero {
     height: 25em;
+    background-image: url("/src/img/jungle-1807476_1920.jpg");
   }
   body .about-us__box {
     display: flex;
@@ -34,11 +35,32 @@
   body .about-us__box-img {
     height: 20em;
     width: 50%;
+    background-image: url("/src/img/waters-3095682_1920.jpg");
+  }
+  body .adventure {
+    background-image: url("/src/img/girl-5785590_1920.jpg");
   }
   body .adventure__text {
     padding: 1em 4em;
     letter-spacing: 0.1em;
     font-size: 3rem;
+  }
+  body .contact-wrapper {
+    position: relative;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .contact-wrapper .map {
+    width: 70%;
+  }
+  body .contact-wrapper .popup {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   body .footer__boxes {
     align-items: flex-start;
@@ -135,6 +157,7 @@ body {
   width: 100%;
   top: 4em;
   background-color: white;
+  color: black;
   transform: translateX(100%);
   transition: transform 0.3s;
 }
@@ -406,11 +429,15 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+.more-offer__card .back-card {
+  display: none;
+}
 .more-offer__card .back-card[data-visible=false],
 .more-offer__card .front-card[data-visible=false] {
   display: none;
 }
 .more-offer__card .back-card[data-visible=true] {
+  display: flex;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .more-offer__card:hover {
@@ -457,13 +484,63 @@ body {
   padding: 0.5em;
   border-radius: 10px;
   border: 1px solid grey;
+  padding: 0.5em 1em;
+}
+.contact__box select {
+  border-radius: 10px;
+  padding: 0.5em;
+}
+.contact__box-error {
+  margin: 0.2em 0.5em;
+  text-align: left;
+  color: red;
+  visibility: hidden;
+}
+.contact label {
+  text-align: left;
+  padding: 0 0.4em 0.2em;
+  font-size: 1.8rem;
 }
 .contact textarea {
-  max-width: 100%;
+  width: 100%;
+  height: 5em;
+  padding: 0.2em 0.5em;
   resize: none;
-  padding: 0.5em;
   border-radius: 10px;
   border: 1px solid grey;
+}
+.contact__btn {
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact__btn-send, .contact__btn-cancel {
+  padding: 0.5em 1.5em;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+}
+
+.error .contact__box-error {
+  visibility: visible;
+}
+
+.popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.popup__box {
+  padding: 1.5em 5em;
+  background-color: rgb(238, 226, 226);
+  border: 1px solid black;
+}
+.popup__box-text {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(20, 170, 20);
 }
 
 .map {

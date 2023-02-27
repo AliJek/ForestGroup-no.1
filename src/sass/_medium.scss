@@ -21,7 +21,7 @@
 
 		.hero {
 			height: 25em;
-			// background-image: url('/src/img/jungle-1807476_1920.jpg');
+			background-image: url('/src/img/jungle-1807476_1920.jpg');
 		}
 
 		.about-us {
@@ -44,15 +44,37 @@
 				&-img {
 					height: 20em;
 					width: 50%;
+					background-image: url('/src/img/waters-3095682_1920.jpg');
 				}
 			}
 		}
 
 		.adventure {
+			background-image: url('/src/img/girl-5785590_1920.jpg');
 			&__text {
 				padding: 1em 4em;
 				letter-spacing: 0.1em;
 				font-size: 3rem;
+			}
+		}
+
+		.contact-wrapper {
+			position: relative;
+			padding: 1em 2em;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+	
+			.map {
+				width: 70%;
+			}
+	
+			.popup {
+				position: absolute;
+				display: none;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 			}
 		}
 
@@ -80,4 +102,5 @@
 			}
 		}
 	}
+
 }

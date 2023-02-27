@@ -77,6 +77,7 @@ body {
 		width: 100%;
 		top: 4em;
 		background-color: white;
+		color: black;
 		transform: translateX(100%);
 		transition: transform 0.3s;
 
@@ -366,7 +367,7 @@ body {
 
 				li {
 					margin-bottom: 1em;
-					padding-bottom: .5em;
+					padding-bottom: 0.5em;
 					border-bottom: 1px solid white;
 				}
 			}
@@ -381,18 +382,19 @@ body {
 				cursor: pointer;
 			}
 		}
-
-		.back-card[data-visible="false"],
-		.front-card[data-visible="false"] {
+		.back-card {
 			display: none;
 		}
-		
-		.back-card[data-visible="true"] {
 
-			background-color: rgb(0, 0, 0, .8);
+		.back-card[data-visible='false'],
+		.front-card[data-visible='false'] {
+			display: none;
 		}
 
-
+		.back-card[data-visible='true'] {
+			display: flex;
+			background-color: rgb(0, 0, 0, 0.8);
+		}
 	}
 
 	&__card:hover {
@@ -406,8 +408,6 @@ body {
 		background-color: rgb(0, 0, 0, 0.3);
 		z-index: -1;
 	}
-
-	
 
 	.hike {
 		background-image: url(/src/img/hike-min.jpg);
@@ -443,18 +443,78 @@ body {
 		flex-direction: column;
 
 		input {
-			padding: .5em;
+			padding: 0.5em;
 			border-radius: 10px;
 			border: 1px solid grey;
+			padding: 0.5em 1em;
+		}
+
+		select {
+			border-radius: 10px;
+			padding: 0.5em;
+		}
+
+		&-error {
+			margin: 0.2em 0.5em;
+			text-align: left;
+			color: red;
+			visibility: hidden;
 		}
 	}
 
+	label {
+		text-align: left;
+		padding: 0 0.4em 0.2em;
+		font-size: 1.8rem;
+	}
+
 	textarea {
-		max-width: 100%;
+		width: 100%;
+		height: 5em;
+		padding: 0.2em 0.5em;
 		resize: none;
-		padding: .5em;
 		border-radius: 10px;
 		border: 1px solid grey;
+	}
+
+	&__btn {
+		padding: 1em;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+
+		&-send,
+		&-cancel {
+			padding: 0.5em 1.5em;
+			border: 1px solid grey;
+			border-radius: 10px;
+			background: none;
+			cursor: pointer;
+		}
+	}
+}
+
+.error {
+	.contact__box-error {
+		visibility: visible;
+	}
+}
+
+.popup {
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	&__box {
+		padding: 1.5em 5em;
+		background-color: rgb(238, 226, 226);
+		border: 1px solid black;
+
+		&-text {
+			text-align: center;
+			font-size: 3rem;
+			color: rgb(20, 170, 20);
+		}
 	}
 }
 
